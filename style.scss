@@ -123,3 +123,32 @@ h2 {
 .displayFlex {
     display: flex;
 }
+
+
+@media (max-width: 800px) {
+    .landing .slogan {
+        font-size: 2em;
+    }
+
+    .main {
+        background-image: url('drone1.jpg');
+    }
+    .main .info, .bottom-nav {
+        font-size: .9em;
+    }
+
+    .bottom-nav {
+        width: 100%;
+    }
+
+    .main .info {
+        width: 18%;
+    }
+
+
+    .bottom-nav ul li:nth-of-type(3), .bottom-nav ul li:last-of-type {
+        display: none;
+    }
+
+
+}
