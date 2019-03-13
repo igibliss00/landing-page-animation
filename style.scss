@@ -24,14 +24,14 @@ h2 {
         left: 0;
         height: 100vh;
         width: 100vw;
-        background-image: url('./mountain-new.png');
+        background-image: url('mountain-new.png');
         background-size: cover;
         z-index: 1;
     }
     .sky {
         height: 100vh;
         width: 100vw;
-        background-image: url('./sky.jpg');
+        background-image: url('sky.jpg');
         background-size: cover;
     }
     .slogan {
@@ -80,25 +80,29 @@ h2 {
 }
 
 .main {
-    height: 100vh;
+    height: 0;
     width: 100vw;
-    background-image: url('./drone.jpg');
+    background-image: url('drone.jpg');
     background-size: cover;
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: flex;
     justify-content: space-around;
     .info {
-        margin-top: 800px;
-        // transform: translateY(500px);
-        width: 350px;
-        height: 150px;
-        opacity: 0.3;
+        margin-top: -400px;
+        width: 25%;
+        height: 20%;
+        opacity: 0;
         background-color: black;
         padding: 20px;
         font-size: 1.1em;
         border-radius: 10px;
     }
+
     .info2 {
+        .info2-box {
+            display: flex;
+            justify-content: space-between;
+        }
         .hostPic {
             background-image: url('profilePic.jpg');
             background-size: cover;
@@ -119,9 +123,3 @@ h2 {
 .displayFlex {
     display: flex;
 }
-
-.displayOpacity {
-    opacity: 1;
-}
-
-

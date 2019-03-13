@@ -43,6 +43,7 @@ function nextPage() {
     }, '-=2500')
     .add({
       targets: el2,
+      duration: 100,
       update: () => {
         for( i = 0; i < el2.length; i++) {
           el2[i].classList.add('displayNone');
@@ -51,23 +52,15 @@ function nextPage() {
     })
     .add({
       targets: '.main',
-      duration: 100,
-      update: () => {
-        fade();
-      }
-    }, '-=2700')
+      duration: 8000,
+      height: '100vh',
+    }, '-=6500')
     .add({
       targets: info,
       opacity: .3,
-      update: () => {
-        main.classList.add('displayFlex');
-      }
-    })
-    .add({
-      targets: info,
       translateY: {
-        value: -700,
-        duration: 1000
+        value: 500,
+        duration: 1000,
       },
       delay: function(el, i, l) {
         return i * 100;
