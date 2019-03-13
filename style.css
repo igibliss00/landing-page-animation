@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: white; }
+
+.top-nav, .slogan, .bottom-nav {
+  cursor: pointer; }
+
+h2 {
+  font-size: 2em; }
+
+.landing {
+  overflow: hidden; }
+  .landing .mountain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./mountain-new.png");
+    background-size: cover;
+    z-index: 1; }
+  .landing .sky {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./sky.jpg");
+    background-size: cover; }
+  .landing .slogan {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    margin: 0 auto;
+    font-size: 5em;
+    z-index: 2; }
+
+.top-nav .logo {
+  position: absolute;
+  left: 0;
+  margin: 30px;
+  font-size: 2em;
+  color: orangered; }
+
+.top-nav .signup {
+  position: absolute;
+  right: 0;
+  margin: 30px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 15px 25px; }
+
+.bottom-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  z-index: 1;
+  width: 50%; }
+  .bottom-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 10px;
+    list-style: none;
+    font-size: 1.5em; }
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./drone.jpg");
+  background-size: cover;
+  opacity: 0;
+  display: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .main .info {
+    margin-top: 800px;
+    width: 350px;
+    height: 150px;
+    opacity: 0.3;
+    background-color: black;
+    padding: 20px;
+    font-size: 1.1em;
+    border-radius: 10px; }
+  .main .info2 .hostPic {
+    background-image: url("profilePic.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; }
+  .main span {
+    font-size: 1.5em; }
+
+.displayNone {
+  display: none; }
+
+.displayFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.displayOpacity {
+  opacity: 1; }
